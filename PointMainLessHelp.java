@@ -19,7 +19,7 @@ public class PointMainLessHelp {
         p2 = p2.translate(0,5);
 
         // print the points again
-        System.out.println("p1 translated is now " + p1.translate);
-        System.out.println("p2 translated is now " + p1.translate);
+        System.out.println("p1 translated is now " + p1);
+        System.out.println("p2 translated is now " + p1);
     }
 }
