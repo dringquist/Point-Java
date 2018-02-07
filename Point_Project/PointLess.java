@@ -66,4 +66,18 @@ public class PointLess {
          }
         return (double)(other.y - this.y) / (other.x - this.x);
    }
+   
+   //IsCollinear Method
+   public boolean isCollinear(PointLess p1, PointLess p2){
+   
+       double slope = (double)(p1.y - y) / (p1.x - x);
+       double slope2 = (double)(p2.y - y) / (p2.x - y);
+       double slope3 = (double)(p1.y - p2.y) / (p1.x - p2.y);
+       
+       if( x == y || slope == slope2 || slope2 == slope3 || slope == slope3){
+           return true;
+           
+        }
+       return false;
+    }
 }
