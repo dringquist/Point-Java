@@ -9,7 +9,7 @@ public class PointLess {
 
     // Constructs a new point at the origin, (0, 0).
     public PointLess() {
-        this(0, 0);    // calls Point(int, int) constructor
+        this(0,0);    // calls Point(int, int) constructor
     }
 
     // Constructs a new point with the given (x, y) location.
@@ -84,6 +84,7 @@ public class PointLess {
     
     //Draw Method
     public void drawPoints(Graphics g){
+       
         
     }
 }

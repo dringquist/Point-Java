@@ -16,11 +16,24 @@ public class PointMainLessHelp {
         Scanner scnr = new Scanner(System.in);
         ArrayList<PointLess> points = new ArrayList<PointLess>();
         
+        int xcoor;
+        int ycoor;
         System.out.println("Type in Numbers to add Points");
-        for(int i = 0; i <= 10; i++){
-   
-            points.add(scnr.next());
-    }
+        do{
+            xcoor = scnr.nextInt();
+            ycoor = scnr.nextInt();
+        }
+        while(xcoor <= 0 || ycoor <= 0);
+        
+        for(int i = 0; i <= 5; i++){
+         
+            PointLess temp = new PointLess(xcoor, ycoor);
+            points.add(temp);
+            
+        }
+        
+        
+        
         // print each point and its distance from origin
         System.out.println("p1 is " + p1);
         System.out.println("p1 distance from origin = " + p1.distanceFromOrigin());
